@@ -26,8 +26,16 @@ int main()
 
     ///   площадь по формуле Герона
     int Ploshad = sideA + sideB + sideC;
-    std::cout << "Площадь по формуле Герона = " << sqr(Ploshad * (Ploshad - a) * (Ploshad - b) * (Ploshad - sideC));
+    std::cout << "Площадь по формуле Герона = " << sqr(Ploshad * (Ploshad - sideA) * (Ploshad - sideB) * (Ploshad - sideC));
     ///   Равнобедренный треугольник ли
-    std::cout << "Треуголник равнобедренный = ";
+   
+    if (sideA = sideC || sideA = sideB || sideC = sideB == true) {
+        std::cout << "Треуголник равнобедренный = ";
+
+
+    }
+    else {
+        std::cout << "Треуголник неравнобедренный = ";
+    }
 
 }
