@@ -22,18 +22,12 @@ int main()
     int sideC = 0;
     std::cin >> sideC;
 
-    std::cout << "Периметр треугольника = " << sideA + sideB + sideA;
+    std::cout << "Периметр треугольника = " << sideA + sideB + sideC;
 
-
-
-std::cout << "Периметр треугольника = " << sideA + sideB + sideC;
-
-///   площадь по формуле Герона
-int Ploshad = sideA + sideB + sideC;
-std::cout << "Площадь по формуле Герона = " << sqr(Ploshad * (Ploshad - a) * (Ploshad - b) * (Ploshad - sideC));
-
-
-///   Равнобедренный треугольник ли
-std::cout << "Треуголник равнобедренный = " <<
+    ///   площадь по формуле Герона
+    int Ploshad = sideA + sideB + sideC;
+    std::cout << "Площадь по формуле Герона = " << sqr(Ploshad * (Ploshad - a) * (Ploshad - b) * (Ploshad - sideC));
+    ///   Равнобедренный треугольник ли
+    std::cout << "Треуголник равнобедренный = ";
 
 }
