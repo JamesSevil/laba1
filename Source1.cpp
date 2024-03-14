@@ -1,41 +1,38 @@
 
-
 #include <iostream>
-
+using namespace std;
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
     /// Периметр треугольника
-   /// int Perimetr = 0;
-    std::cout << "Введите стороны треугольника:";
+    cout << "Введите стороны треугольника:\n";
 
-    std::cout << "Сторона А = ";
+    cout << "Сторона А = ";
     int sideA = 0;
-    std::cin >> sideA;
+    cin >> sideA;
 
-    std::cout << "Сторона B = ";
+    cout << "Сторона B = ";
     int sideB = 0;
-    std::cin >> sideB;
+    cin >> sideB;
 
-    std::cout << "Сторона C = ";
+    cout << "Сторона C = ";
     int sideC = 0;
-    std::cin >> sideC;
+    cin >> sideC;
 
-    std::cout << "Периметр треугольника = " << sideA + sideB + sideC;
+    cout << "Периметр треугольника = " << sideA + sideB + sideC;
 
     ///   площадь по формуле Герона
     int Ploshad = sideA + sideB + sideC;
-    std::cout << "Площадь по формуле Герона = " << sqr(Ploshad * (Ploshad - sideA) * (Ploshad - sideB) * (Ploshad - sideC));
+    cout << "\nПлощадь по формуле Герона = " << (sqrt(Ploshad * (Ploshad - sideA) * (Ploshad - sideB) * (Ploshad - sideC)));
+
     ///   Равнобедренный треугольник ли
-   
-    if (sideA = sideC || sideA = sideB || sideC = sideB == true) {
-        std::cout << "Треуголник равнобедренный = ";
-
-
+    if (sideA == sideC || sideB == sideC || sideA == sideB)
+    {
+        cout << "\nТреуголник равнобедренный";
     }
     else {
-        std::cout << "Треуголник неравнобедренный = ";
+        cout << "\nТреуголник неравнобедренный ";
     }
 
 }
