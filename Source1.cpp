@@ -23,9 +23,10 @@ int main()
     cout << "Периметр треугольника = " << sideA + sideB + sideC;
 
     ///   площадь по формуле Герона
-    int Ploshad = sideA + sideB + sideC;
-     // по формуле SQRT(P*(P-A)*(P-B)*(P-C))
-    cout << "\nПлощадь по формуле Герона = " << (sqrt(Ploshad * (Ploshad - sideA) * (Ploshad - sideB) * (Ploshad - sideC)));
+
+    // по формуле SQRT(P*(P-A)*(P-B)*(P-C))
+    float T = (sideA + sideB + sideC) / 2;
+    cout << "\nПлощадь по формуле Герона = " << (sqrt(T * (T - sideA) * (T - sideB) * (T - sideC)));
 
     ///   Равнобедренный треугольник ли
     // цикл с нахождением двух одинаковых переменных если есть одинаковые то true
