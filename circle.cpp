@@ -21,7 +21,7 @@ int main() {
 
     angle1 = angle;
 
-    if (angle < 0) angle -= angle * 2; // перевод значения угла из отрицательного в положительный
+    if (angle < 0) angle -= angle * 2; // перевод значения   угла из отрицательного в положительный
 
     float lenght = 2 * PI * radius; // формула длины окружности
     float square = PI * radius * radius; // формула площади окружности
