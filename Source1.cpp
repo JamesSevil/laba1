@@ -28,6 +28,7 @@ int main()
     float T = (sideA + sideB + sideC) / 2;
     cout << "\nПлощадь по формуле Герона = " << (sqrt(T * (T - sideA) * (T - sideB) * (T - sideC)));
     int a;
+
     ///   Равнобедренный треугольник ли
     // цикл с нахождением двух одинаковых переменных если есть одинаковые то true
     if (sideA == sideC || sideB == sideC || sideA == sideB)
